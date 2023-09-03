@@ -5,17 +5,19 @@ class CustomNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final currentIndex = 0;
+
     return BottomNavigationBar(
-      currentIndex: 1,
+      currentIndex: currentIndex,
       elevation: 0,
-      items: [
+      items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.map),
           label: 'Mapa',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.compass_calibration),
-          label: 'Mapa',
+          label: 'Direcciones',
         ),
       ],
     );
