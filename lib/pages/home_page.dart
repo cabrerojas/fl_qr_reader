@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: _HomePageBody(),
+      body: const _HomePageBody(),
       bottomNavigationBar: const CustomNavigationBar(),
       floatingActionButton: const ScanButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
 }
 
 class _HomePageBody extends StatelessWidget {
-  _HomePageBody({Key? key}) : super(key: key);
+  const _HomePageBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
